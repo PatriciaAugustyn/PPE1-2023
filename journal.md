@@ -17,5 +17,6 @@ Pour la prochaine séance : Télécharger l’archive fichiers.zip
     - puis par lieux pour les photos.
 - copier les fichiers dans les dossiers correspondants
 
+## Séance du 27 septembre 2023
 
 
