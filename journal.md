@@ -19,4 +19,26 @@ Pour la prochaine séance : Télécharger l’archive fichiers.zip
 
 ## Séance du 27 septembre 2023
 
+Cette deuxième séance a eu pour but de nous familiariser avec les commandes du terminal. Avant de commencé, nous avons corrigé l'exercice 1, en utilisant les commandes principales.. Par la suite, nous avons continuer avec la partie théorique et pratique :
+- Introduire des nouvelles notions sur la ligne de commande.
+- Synchroniser notre dépôt avec notre ordinateur via à notre clé publique que l'on a créé.
+- Voir les commandes spécifiques de GitHub depuis la ligne de commande :
+    - Envoyer sur GitHub nos fichiers : git add, git commit et git push.
+    - Récupérer les nouveaux changements : git status -> git fetch -> git status -> git pull
+    - Créer des étiquettes/tags/"release" pour indiquer les versions finies de nos travaux : git tag -a -m "message..." <tagname> [commit], git push origin <tagname>
+
+Ce que j'ai apprécié c'est qu'on a pu prendre consacrer un peu de temps à la pratique, et poser des questions si on bloquait à un endroit. Par ailleurs, j'aimerais que l'on fasse un point sur le projet.
+
+## Séance du 04 octobre 2023
+
+
+
+
+
+
+
+
+
+
+
 
