@@ -31,6 +31,10 @@ Ce que j'ai apprécié c'est qu'on a pu prendre consacrer un peu de temps à la 
 
 ## Séance du 04 octobre 2023
 
+- exo 2 annuler ça :
+
+# séance 3
+
 
 
 
