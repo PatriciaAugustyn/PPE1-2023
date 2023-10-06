@@ -34,6 +34,10 @@ Ce que j'ai apprécié c'est qu'on a pu prendre consacrer un peu de temps à la 
 - exo 2 annuler ça :
 
 # séance 3 -essai
+# Suite des exercice : 2 :
+- commit_1
+- commit_2
+
 
 
 
