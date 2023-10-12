@@ -52,6 +52,21 @@ Pour ma part, j'ai commencé à noter des urls dans un tableau excel : environ 5
 
 ## Séance du 11 octobre 2023
 
+Cette séance a eu pour but de nous familiariser avec les commandes du terminal. Pour cela, nous avons continué avec la partie théorique et pratique :
+- Introduire de nouvelles notions avec les pipelines : le flux d'entrée, de sortie, et de sortie d'erreur standard.
+    - flux d'entrées/sorties : stdin, stdout, stderr
+    - quelques commandes de git : cat, grep, sort, uniq et echo
+Pour cela, nous avons fait des exercices sur notre dossier Fichiers, puis nous avons commencé à parler des scripts.
+
+Pour le projet de groupe, nous avons créé un GitHub commun :
+- Le nom d'utilisateur est : Bon2023heur
+
+J'ai beaucoup aimé la partie pratique sur le fichier que nous avons dû trier. Nous avons vu des fonctions qui nous seront utiles pour le projet, dont trouver les occurrences d'un mot avec grep.
+Par ailleurs, à la fin nous avons manqué de temps et nous avons passé l'introduction au script trop rapidement.
+Nous avons des exercices à faire pour la semaine prochaine, et j'aimerais qu'on passe un petit peu de temps sur cette partie.
+
+## Séance du 18 octobre 2023
+
 
 
 
