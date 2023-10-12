@@ -1,0 +1,76 @@
+# Exercice 1 :
+avec les fichiers *.ann, Sauriez vous... ?
+
+• Compter le nombre d’annotations par année (2016, 2017 et 2018) :
+
+    cat ./2016/*/* | wc -l
+--> 9442
+
+    cat ./2017/*/* | wc -l
+--> 7179
+
+    cat ./2018/*/* | wc -l
+--> 7561
+
+• limiter ce comptage aux lieux (Location) :
+
+    cat ./2016/*/* |grep Location |  wc -l
+--> 3144
+
+    cat ./2017/*/* |grep Location |  wc -l
+--> 2466
+
+    cat ./2018/*/* |grep Location |  wc -l
+--> 3110
+
+
+• sauvegarder ces résultats dans un (seul) fichier :
+
+    echo "Location de 2016" > locations.txt
+    cat ./2016/*/* |grep Location |  wc -l >> locations.txt
+
+    echo "Location de 2017" >> locations.txt
+    cat ./2017/*/* |grep Location |  wc -l >> locations.txt
+
+    echo "Location de 2018" >> locations.txt
+    cat ./2018/*/* |grep Location |  wc -l >> locations.txt
+
+
+• établir le classement des lieux les plus cités.
+
+    cat ./2016/*/* |grep Location | cut -f 3 |sort |  uniq -c |sort -nr | head -n 20
+
+    cat ./2017/*/* |grep Location | cut -f 3 |sort |  uniq -c | sort -nr | head -n 20
+
+    cat ./2018/*/* |grep Location | cut -f 3 |sort |  uniq -c | sort -nr | head -n 20
+
+cut -f 3 : renvoie à un fichier tabulé et on chosit la trosième colonne dans l'annotation de Location
+sort : trier, l'option -n trie numérique et -nr dans l'ordre décroissant.
+uniq : retire les doublons, l’option -c compte le nombre de fois que l’occurence apparaît quand elle se suit
+
+
+
+• trouver les annotations les plus fréquentes pour votre mois de naissance, toutes années confondues.
+
+    cat ./2016/06/* | sort | uniq -c |sort -nr |head
+    cat ./2017/06/* | sort | uniq -c |sort -nr |head
+    cat ./2018/06/* | sort | uniq -c |sort -nr |head
+
+
+# Exercice 2 :
+
+ écrire un script qui donne le nombre de Location par année
+• ajoutez-le à votre git
+
+# Exercice 3 :
+
+Partie A :
+• Écrire un script qui compte les entités pour une année un type d’entité donnés
+en argument du programme.
+• Écrire un second script qui lance le script précédent trois fois, une fois pour
+chaque années, en prenant le type d’entité en argument.
+
+Partie B :
+• créer un script pour établir le classement des lieux les plus cités.
+• prendre en argument l’année, le mois et le nombre de lieux à afficher
+• accepter * pour l’année et le mois.
