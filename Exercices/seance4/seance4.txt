@@ -84,16 +84,48 @@ echo "Location de 2018" >> locations-script1.txt
 cat ./2018/*/* |grep Location |  wc -l >> locations-script1.txt
 ------------------------
 • ajoutez-le à votre git
+commit : "Ajout de l'exercice2"
+commit : "Ajout de premier_script et son éxécution"
 
 # Exercice 3 :
 
 Partie A :
-• Écrire un script qui compte les entités pour une année un type d’entité donnés
-en argument du programme.
+• Écrire un script qui compte les entités pour une année un type d’entité donnés en argument du programme.
 • Écrire un second script qui lance le script précédent trois fois, une fois pour
 chaque années, en prenant le type d’entité en argument.
+==> Deux deux script de la partie A en 1 script :
+
+nano script2_a1.sh
+
+    #!/usr/bin/bash
+    echo "Nombre d'entités en 2016" > annotation-script2_a1.txt
+    cat ./2016/*/* | wc -l >> annotation-script2_a1.txt
+
+    echo "Nombre d'entités en 2017" >> annotation-script2_a1.txt
+    cat ./2017/*/* | wc -l >> annotation-script2_a1.txt
+
+    echo "Nombre d'entités en 2018" >> annotation-script2_a1.txt
+    cat ./2018/*/* | wc -l >> annotation-script2_a1.txt
+
+chmod +x script2_a1
+
+--> réponse dans Fichiers/ann/ : annotation-script2_a1.txt
 
 Partie B :
 • créer un script pour établir le classement des lieux les plus cités.
 • prendre en argument l’année, le mois et le nombre de lieux à afficher
 • accepter * pour l’année et le mois.
+
+    #!/usr/bin/bash
+    echo "Les lieux les plus cités en 2016" > script3_b_lieu.txt
+    cat ./2016/*/* |grep Location | cut -f 3 |sort |  uniq -c |sort -nr | head -n 20 >> script3_b_lieu.txt
+
+    echo "Les lieux les plus cités en 2017" >> script3_b_lieu.txt
+    cat ./2017/*/* |grep Location | cut -f 3 |sort |  uniq -c | sort -nr | head -n 20 >> script3_b_lieu.txt
+
+    echo "Les lieux les plus cités en 2018" >> script3_b_lieu.txt
+    cat ./2018/*/* |grep Location | cut -f 3 |sort |  uniq -c | sort -nr | head -n 20 >> script3_b_lieu.txt
+
+chmod +x script3_b.sh
+
+--> réponse dans Fichiers/ann/ : script3_b_lieu.txt
