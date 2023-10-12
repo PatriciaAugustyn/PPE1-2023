@@ -60,6 +60,29 @@ uniq : retire les doublons, l’option -c compte le nombre de fois que l’occur
 # Exercice 2 :
 
  écrire un script qui donne le nombre de Location par année
+commande :
+nano premier_script
+------------------------
+ #!/usr/bin/bash
+echo "Voici mon premier script"
+echo "Date du script : $(date)"
+------------------------
+commande :
+ls -l premier_script.sh
+chmod +x premier_script.sh         ==> rendre le fichier éxécutable
+./premier_script.sh
+    ==> lancer le script
+nano premier_script.sh
+------------------------
+echo "Location de 2016" > locations-script1.txt
+cat ./2016/*/* |grep Location |  wc -l >> locations-script1.txt
+
+echo "Location de 2017" >> locations-script1.txt
+cat ./2017/*/* |grep Location |  wc -l >> locations-script1.txt
+
+echo "Location de 2018" >> locations-script1.txt
+cat ./2018/*/* |grep Location |  wc -l >> locations-script1.txt
+------------------------
 • ajoutez-le à votre git
 
 # Exercice 3 :
