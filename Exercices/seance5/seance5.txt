@@ -1,0 +1,4 @@
+
+Séance 5 :
+
+1) Reprendre le script de la dernière fois et ajouter la validation des programmes avec des tests
