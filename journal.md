@@ -67,6 +67,30 @@ Nous avons des exercices à faire pour la semaine prochaine, et j'aimerais qu'on
 
 ## Séance du 18 octobre 2023
 
+Cette séance a eu pour but de nous familiariser avec les scripts. Pour cela, nous avons continué avec la partie théorique et pratique :
+- Introduire de nouvelles notions avec les conditions et traitements :
+    - les instructions : if/fi, then, else,
+    - les boucles : for et while
+    - les conditions
+        - sur le chemin : -f sur le fichier , -d sur le dossier, et  -s
+        - sur des chaînes de caractères : = pour des chaînes identiques, != pour des chaînes différentes, < ou >, -n est vrai si la chaîne n’est pas vide, et -z si la chaîne est vide
+        - sur les entiers :
+            a -eq b 	si a est égal à b (equal)
+            a -ne b 	si a est différent de b (not equal)
+            a -lt b 		si a est plus petit que b (less than)
+            a -gt b 	si a est plus grand que b (greater than)
+            a -le b 		si a est inférieur ou égal à b
+            a -ge b 	si a supérieur ou égal à b
+
+
+Pour cela, nous avons corrigé les exercices de la dernière fois. Par ailleurs, comme nous n'avons pas eu la correction complète, les exercices pour la séance du 25 octobre étaient compliqués. Comme on devait reprendre le script, nous ne sommes pas partis sur de bonnes bases. Ainsi, j'ai rencontré des difficultés pour exécuter mon script.
+
+J'ai beaucoup aimé la partie sur lynx parce que c'est quelque chose que je n'ai jamais vu et j'ai trouvé cela impressionnant. Par ailleurs, j'aimerais beaucoup qu'on fasse plus d'exercices sur les scripts car c'est quelque chose que je n'ai pas très bien assimilé.
+
+En ce qui concerne le projet, avec mon groupe nous avons environ 50 liens chacunes pour chaque langue, donc 150 en tout. Cette semaine, nous avons décidé d'améliorer certains liens. Mais aussi, j'avais une question concernant les sites web qu'on peut choisir. J'ai trouvé une critique du film Le Bonheur sur Allo Ciné, dont les commentaires et les avis des personnes. Mais aussi, j'ai trouvé 2, 3 liens sur les paroles de chansons qui contiennent le mot bonheur. Ainsi, je me demandais si nous pouvions choisir des forums et les paroles de chansons ?
+
+## Séance du 25 octobre 2023
+
 
 
 
