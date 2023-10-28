@@ -93,7 +93,7 @@ En ce qui concerne le projet, avec mon groupe nous avons environ 50 liens chacun
 
 Cette séance a eu pour but de nous donner toutes les informations sur le projet, ainsi que son organisation. Pour cela, nous avons eu 2 exercices à faire sur la collecte et l'analyse des pages web. Ainsi, nous avons dû s'exercer sur les exercices et nous devons les finir pendant les vacances. Comme j'avais avancé pendant les cours, j'ai pu tester mes urls pour le projet.
 
-La première étape de ce projet a été le choix du mot. Pendant nos discussions, nous avons évoqué plusieurs idées, et on a rapidement remarqué que le lien entre nos mots était l’expression des sentiments ou bien des ressentis. Par exemple, on avait le mot "amour", mais nous avons supposé que le verbe “aimer” était plus utilisé pour exprimer ses sentiments. Ainsi, le mot "bonheur" a été évoqué et nous avons toutes acquiescé.
+La première étape de ce projet a été le choix du mot. Pendant nos discussions, nous avons évoqué plusieurs idées, et on a rapidement remarqué que le lien entre nos mots était l’expression des sentiments ou bien des ressentis. Par exemple, on avait le mot "amour", mais nous avons supposé que le verbe "aimer" était plus utilisé pour exprimer ses sentiments. Ainsi, le mot "bonheur" a été évoqué et nous avons toutes acquiescé.
 
 Lorsqu’on évoque le mot "bonheur", on pense tout de suite à un sentiment de bien-être.
 Nous pensons que le "bonheur" peut être discuté parce que les personnes sont à la quête du bonheur, donc chacun peut avoir sa propre définition mais aussi chacun peut avoir sa vision de comment atteindre cet état de plénitude.
@@ -102,7 +102,7 @@ Ensuite, nous avons eu la question du genre. Au début, nous avons cherché notr
 
 Ainsi, nous voulons observer comment les personnes utilisent ce mot dans nos trois langues, mais aussi quelles sont les expressions et les occurrences qui l'entourent.
 
-Grâce à l'exercice que nous avons fait, j'ai pu tester mes urls des forums de la langue française, et ils ont tous une réponse HTTP 200.
+Grâce à l'exercice que nous avons fait, j'ai pu tester mes urls des forums de la langue française, et ils ont pratiquement tous une réponse 200 pour le HTTP et UTF-8 pour l’encodage.
 
 ## Séance du 08 novembre 2023
 
