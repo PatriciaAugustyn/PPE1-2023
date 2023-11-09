@@ -105,7 +105,35 @@ Ainsi, nous voulons observer comment les personnes utilisent ce mot dans nos tro
 Grâce à l'exercice que nous avons fait, j'ai pu tester mes urls des forums de la langue française, et ils ont pratiquement tous une réponse 200 pour le HTTP et UTF-8 pour l’encodage.
 
 ## Séance du 08 novembre 2023
+Pendant la première partie du cours nous nous sommes concentrés sur la correction du script miniprojet.sh Ensuite nous avons fait un point sur la partie HTML :
+- HTML : HyperText Markup Language
+- c'est un langage de balisage pour représenter les pages webs
+- il est reconnu par tous les navigateurs
 
+Exemple pour créer un tableau:
+<html>
+	<body>
+		<table>
+			<tr><th>livre</th><th>taille</th></tr>
+            <tr>
+                <td>Du côté de chez Swann<td>
+                <td>1.0Mo</td>
+            </tr>
+            <tr>
+                <td>L’Assommoir</td>
+                <td>990 ko</td>
+            <tr>
+		</table>
+	</body>
+</html>
+
+• table : la balise racine du tableau
+• tr : table row, une ligne (se place dans table)
+• th : table header, une cellule d’entête (seulement la première ligne)
+• td : table data, une cellule classique (toutes les lignes et pas l'entête)
+
+Les exercices sont dans le dossier Exercices/seance7. Mais, mon script pour mettre le fichier tabulaire en format HTML se trouve dans le dossier miniprojet/programmes/script.sh. et le résultat se trouve dans miniprojet/tableaux/tableau-fr.html.
+Pour certaines fonctions j'ai dû regarder sur internet parce que je n'étais pas capable de le faire seule sans l'aide de quelqu'un. Ainsi, j'ai ajouté en commentaire les sites qui ont permis de finir mes scripts.
 
 
 
