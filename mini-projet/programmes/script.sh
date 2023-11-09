@@ -1,9 +1,18 @@
-<!DOCTYPE html>
+#!/usr/bin/env bash
+
+fichier_tabulaire=$1
+
+#Le nom du fichier HTML en sortie
+fichier_html="../tableaux/tableau-fr.html"
+
+# Créer le début de notre page HTML
+# Ajout du style pour rendre notre tableau coloré
+echo "<!DOCTYPE html>
 <html>
     <head>
-        <meta charset=UTF-8/>
+        <meta charset="UTF-8"/>
         <title>Transformer la sortie tabulaire en HTML</title>
-		<link href='https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&display=swap' rel=stylesheet>
+		<link href='https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&display=swap' rel="stylesheet">
         <style>
             body {
                 background: #FAF0E6;
@@ -40,8 +49,10 @@
 
     </head>
 
-    <body>
-<table>
+    <body>" > $fichier_html
+
+    # L'entête du tableau
+    echo "<table>
         <tr>
             <th>Ligne</th>
             <th>URL</th>
@@ -51,43 +62,17 @@
             <th>Dump Text</th>
             <th>Occurrences</th>
             <th>Contexte</th>
-        </tr>
-<tr>
-    <td>1</td>
-   <td>https://fr.wikipedia.org/wiki/Robot</td>
-   <td>200</td>
-   <td>UTF-8</td>
-   </tr>
-<tr>
-    <td>2</td>
-   <td>https://fr.wikipedia.org/wiki/Robot_de_cuisine</td>
-   <td>200</td>
-   <td>UTF-8</td>
-   </tr>
-<tr>
-    <td>3</td>
-   <td>fr.wikipedia.org/wiki/Robot_d%27indexation</td>
-   <td>200</td>
-   <td>UTF-8</td>
-   </tr>
-<tr>
-    <td>4</td>
-   <td>https://fr.wikipedia.org/wiki/Bot_informatique</td>
-   <td>200</td>
-   <td>UTF-8</td>
-   </tr>
-<tr>
-    <td>5</td>
-   <td>https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)</td>
-   <td>404</td>
-   <td>UTF-8</td>
-   </tr>
-<tr>
-    <td>6</td>
-   <td>https://roboty.magistry.fr</td>
-   <td>502</td>
-   <td></td>
-   </tr>
-</table>
+        </tr>" >> $fichier_html
+
+    # La commande AWK a été trouvé sur :
+    #https://gitlab.mbb.cnrs.fr/f/site/form1/ttext/
+    #https://www.funix.org/fr/unix/awk.htm
+    awk -F"\t" '{ printf "<tr>\n    <td>%s</td>\n   <td>%s</td>\n   <td>%s</td>\n   <td>%s</td>\n   </tr>\n", $1, $2, $3, $4 }' $fichier_tabulaire >> $fichier_html
+
+
+
+    echo "</table>
     </body>
-</html>
+</html>" >> $fichier_html
+
+echo "Voici le site web : $fichier_html"
