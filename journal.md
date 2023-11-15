@@ -135,8 +135,31 @@ Exemple pour créer un tableau:
 Les exercices sont dans le dossier Exercices/seance7. Mais, mon script pour mettre le fichier tabulaire en format HTML se trouve dans le dossier miniprojet/programmes/script.sh. et le résultat se trouve dans miniprojet/tableaux/tableau-fr.html.
 Pour certaines fonctions j'ai dû regarder sur internet parce que je n'étais pas capable de le faire seule sans l'aide de quelqu'un. Ainsi, j'ai ajouté en commentaire les sites qui ont permis de finir mes scripts.
 
+## Séance du 15 novembre 2023
+Pendant la première partie du cours nous nous sommes concentrés sur la correction des exercices et du script sur le miniprojet.
+Ensuite nous avons continué sur la partie HTML :
+- HTML : on peut attribuer une ou plusieurs "class" pour décrire la structure
+- CSS : feuille de style qui permet de rendre notre site web esthétique
+- créer notre page web gratuitement sur GitHub : index.html au root de notre arborescence
+- regarder la bibliothèque de CSS : Bulma CSS
 
+Pour utiliser la feuille de style, nous pouvons le faire dans la balise <head></head> :
+• <head>
+    <...></...>
+    <style>
+        table {
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
 
+Mais aussi, nous pouvons directement utiliser les "class" du site Bulma :
+• <div class=\"content m-3\">
+
+Attention, nous avons vu qu'il est plus judicieux de mettre \" avant le guillemet pour le déspécialiser et pour ne pas le confondre avec les guillemets de echo.
+
+Je trouve que Bulma peut être très intéressant mais si nous avons des idées précises pour le CSS, alors nous devons quand même rajouter notre code dans notre fiche.
+Mais aussi, je me demandais si nous allions voir comment inviter les autres membres de notre groupe dans un dépôt git. Je me le demandais parce que dans le dernier diapo, vous nous demandez de : "Pensez à avoir un dépôt git pour votre groupe et à inviter les autres membres pour qu’ils/elles puissent faire des commits et push sur le dépôt.".
 
 
 
