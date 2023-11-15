@@ -62,14 +62,13 @@ echo "<!DOCTYPE html>
             <th>Dump Text</th>
             <th>Occurrences</th>
             <th>Contexte</th>
+
         </tr>" >> $fichier_html
 
     # La commande AWK a été trouvé sur :
     #https://gitlab.mbb.cnrs.fr/f/site/form1/ttext/
     #https://www.funix.org/fr/unix/awk.htm
     awk -F"\t" '{ printf "<tr>\n    <td>%s</td>\n   <td>%s</td>\n   <td>%s</td>\n   <td>%s</td>\n   </tr>\n", $1, $2, $3, $4 }' $fichier_tabulaire >> $fichier_html
-
-
 
     echo "</table>
     </body>
