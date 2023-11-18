@@ -14,6 +14,14 @@
 
             }
 
+            .centre {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                font-size : 50px;
+            }
+
             p {
                 font-size : 20px;
             }
@@ -22,13 +30,19 @@
 	<body>
 
             <div class="content m-3">
-                <h1><u>Exercice 1</u></h1>
+                <div class="centre">
+                    <h1>MINI PROJET</h1>
+                </div>
 
-                <h3>Présentation rapide du projet</h3>
-                <p>Ce projet a eu pour but de générer un site web contenant le tableau de résultats à partir de script. Pour commencer, nous avons eu une liste d'URL au format .txt et nous avons dû afficher le code HTTP et l'encodage de chaque ligne. Ensuite, le résultat a été mis dans un fichier tabulaire pour pouvoir le mettre plus facilement au format HTML.</p>
-                <p>Pour finaliser le projet, nous avons créé un site web pour que le résultat soit visible par tous. En effet, pour rendre la navigation plus agréable, nous avons utilisé des styles mélangés à celui de Bulma.</p>
-                <h3>Résultat du tableau</h3>
-                <p>Voici le lien vers le tableau de résultat : <a href="./mini-projet/tableaux/page.html">Clique</a></p>
+                <h3 class="has-text-centered notification has-background-warning-light">Qui suis-je ?</h3>
+                <p class="">Je m'appelle AUGUSTYN Patricia, et vous êtes actuellement sur le site web du miniprojet. Ce projet s'inscrit dans le cadre du cours de Programmation et Projet Encadré 1 (PPE1) destiné aux étudiants du Master 1 Traitement Automatique des Langues.</p>
+
+                <h3 class="has-text-centered notification has-background-warning-light">Présentation rapide du projet</h3>
+                <p>Ce projet avait pour objectif de générer un site web contenant le tableau de résultats à partir d'un script. Pour commencer, nous avons eu une liste d'URL au format .txt et nous avons dû afficher le code HTTP et l'encodage de chaque ligne. Ensuite, le résultat a été mis dans un fichier tabulaire afin de les intégrer plus facilement au format HTML.</p>
+                <p>Pour finaliser le projet, nous avons développé un site web permettant à tous les utilisateurs ( <strong>dont vous ;)</strong> ) de visualiser les résultats. Afin d'améliorer l'expérience de navigation, nous avons intégré des styles combinés à ceux de Bulma.</p>
+                <p>Voici la documentation du site de <a href="https://bulma.io/documentation/">Bulma</a></p>
+                <h3 class="has-text-centered notification has-background-warning-light">Résultat du tableau</h3>
+                <p>Voici le <a href="./mini-projet/tableaux/page.html">lien</a> vers le tableau de résultat.</p>
              </div>
 
 	</body>
